@@ -17,3 +17,9 @@ submission['target'] = predictor.predict(test)
 submission1 = submission.sample(30000)
 submission1['target'] = abs(submission1['target'])
 submission1.to_csv("submission1.csv", index=False)
+
+# Если image
+
+# MultimodalPredictor
+# https://auto.gluon.ai/stable/api/autogluon.multimodal.MultiModalPredictor.html
+# zero_shot_image_classification; few_shot_classification
